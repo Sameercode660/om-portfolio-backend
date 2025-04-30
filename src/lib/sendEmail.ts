@@ -34,7 +34,7 @@ export async function sendEmail({ name, email, message }: emailData) {
     // Send email
     const info = await transporter.sendMail({
       from: `"Contact Form" <privatething789736@gmail.com>`, // Sender's address
-      to: "mesh789736@gmail.com", // Receiver's address
+      to: "omkarkadam1115@gmail.com", // Receiver's address
       subject: `Message from ${name}`, // Subject line
       html: htmlTemplate, // HTML body
     });
