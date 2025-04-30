@@ -8,14 +8,14 @@ type emailData = {
 
 // Function to send email
 
-async function sendEmail({ name, email, message }: emailData) {
+export async function sendEmail({ name, email, message }: emailData) {
   try {
    
     const transporter = nodemailer.createTransport({
       service: "gmail", 
       auth: {
-        user: "your-email@gmail.com",
-        pass: "your-email-password", 
+        user: "privatething789736@gmail.com",
+        pass: "ylpa stve wvnu tsly", 
       },
     });
 
@@ -33,8 +33,8 @@ async function sendEmail({ name, email, message }: emailData) {
 
     // Send email
     const info = await transporter.sendMail({
-      from: `"Contact Form" <your-email@gmail.com>`, // Sender's address
-      to: "omkarkadam123@gmail.com", // Receiver's address
+      from: `"Contact Form" <privatething789736@gmail.com>`, // Sender's address
+      to: "mesh789736@gmail.com", // Receiver's address
       subject: `Message from ${name}`, // Subject line
       html: htmlTemplate, // HTML body
     });
