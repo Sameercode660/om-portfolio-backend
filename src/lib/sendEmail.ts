@@ -45,9 +45,4 @@ export async function sendEmail({ name, email, message }: emailData) {
   }
 }
 
-// Example usage
-sendEmail({
-  name: "John Doe",
-  email: "johndoe@example.com",
-  message: "Hello, this is a test message!",
-});
+
